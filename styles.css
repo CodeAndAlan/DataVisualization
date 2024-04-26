@@ -1,0 +1,125 @@
+ /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin:10px 15px;   
+  }
+  
+  header {
+    background-color: #30CF79; /* Slightly lighter dark shade for the header */
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:85px;
+    border-radius:12px;
+    margin-bottom:5px;
+    color:#fff;
+  }
+  
+ #title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+ }
+  #underline{
+    border-bottom: 2px solid #fff;
+    width: 100px;
+    padding:1px;
+  }
+
+  .head-b {
+    margin:1px 6px;
+    padding: 3px 10px;
+    border-radius: 200px; 
+    border: none;
+    background-color: #fff; 
+    border: 2px solid transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .head-b:hover{
+    border:2px solid #fff;
+    background-color: #30CF79;
+    color: #fff;
+  }
+  .head-b:active {
+    background-color: rgba(48,207,121);
+    color:white;
+    font-size: 12px;
+    transform: scale(0.97); 
+  }
+  
+
+  header img{
+    width:30px;
+  }
+
+
+/*主要展示部分*/
+/*主要展示部分*/
+/*主要展示部分*/
+  .main-container {
+    display: flex;
+  }
+  
+/*左侧分类部分*/
+/*左侧分类部分*/
+
+
+
+.left,.mid{
+    border-radius: 8px;
+    width: 15%;
+    background-color: (229, 226, 226, 0.5);
+    border: 0.1px solid #ccc; /* 添加边框以增强视觉效果 */
+    /* opacity: 0.5; */
+    overflow: hidden; /* 确保子元素不会超出父元素的边界 */
+    margin:2px;
+}
+
+
+.firstMenu div,.subMenu div {
+    background-color: rgba(229, 226, 226, 0.1);
+    padding: 16px;
+    height: 50px;
+}
+.firstMenu div:hover {
+    background-color: rgba(127, 121, 121, 0.3);
+    cursor: pointer;
+    transition: background-color 0.5s;
+} 
+.subMenu div:hover {
+  background-color: rgba(127, 121, 121, 0.3);
+  cursor: pointer;
+  transition: background-color 0.5s;
+} 
+
+  
+  #right{
+    width: 70%; /* Adjust based on your layout */
+    background-color: rgba(229, 226, 226, 0.5); /* Placeholder color */
+    border-radius: 12px; 
+    margin-left: 3px;
+  }
+  
+
+  .button-place button {
+    margin: 0 8px;
+  }
+  
+
+  .active {
+    background-color: #30CF79 !important; 
+    color: white !important; 
+    font-weight: bolder;
+  }
+  
