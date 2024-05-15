@@ -27,11 +27,7 @@
     font-weight: 700;
     margin-bottom: 5px;
  }
-  #underline{
-    border-bottom: 2px solid #fff;
-    width: 100px;
-    padding:1px;
-  }
+
 
   .head-b {
     margin:1px 6px;
@@ -64,17 +60,18 @@
   }
 
 
-/*主要展示部分*/
-/*主要展示部分*/
-/*主要展示部分*/
-  .main-container {
+/*重要指标展示*/
+/*重要指标展示*/
+
+  #keyIndicators{
     display: flex;
   }
   
-/*左侧分类部分*/
-/*左侧分类部分*/
 
 
+  
+/*左侧分类部分*/
+/*左侧分类部分*/
 
 .left,.mid{
     border-radius: 8px;
@@ -86,40 +83,47 @@
     margin:2px;
 }
 
-
 .firstMenu div,.subMenu div {
     background-color: rgba(229, 226, 226, 0.1);
     padding: 16px;
     height: 50px;
 }
 .firstMenu div:hover {
-    background-color: rgba(127, 121, 121, 0.3);
+    background-color: rgba(205, 196, 196, 0.3);
     cursor: pointer;
     transition: background-color 0.5s;
 } 
 .subMenu div:hover {
-  background-color: rgba(127, 121, 121, 0.3);
+  background-color: rgba(205, 196, 196, 0.3);
   cursor: pointer;
   transition: background-color 0.5s;
 } 
 
   
   #right{
-    width: 70%; /* Adjust based on your layout */
+    width: 70%; 
     background-color: rgba(229, 226, 226, 0.5); /* Placeholder color */
     border-radius: 12px; 
     margin-left: 3px;
   }
-  
 
   .button-place button {
     margin: 0 8px;
   }
   
-
   .active {
     background-color: #30CF79 !important; 
     color: white !important; 
     font-weight: bolder;
   }
   
+  /* 自定义区 */
+  #selfDefine{
+    display: none;
+  }
+  .sRight{
+    width: 85%; 
+    background-color: rgba(229, 226, 226, 0.5); /* Placeholder color */
+    border-radius: 12px; 
+    margin-left: 3px;
+  }

@@ -1,7 +1,30 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   const firstMenuItems = document.querySelectorAll('.firstMenu div');
   const subMenuItems = document.querySelectorAll('.subMenu div');
-  
+  // 获取所有的按钮
+  const buttons = document.querySelectorAll('.head-b');
+
+  // 为每个按钮添加点击事件监听
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // 先移除所有按钮的 selected 类
+      buttons.forEach(btn => btn.classList.remove('selected'));
+      // 为被点击的按钮添加 selected 类
+      button.classList.add('selected');
+    });
+  });
+  //两个顶部按钮的切换
+  document.getElementById('keyIndicatorsBut').addEventListener('click', function () {
+    document.getElementById('keyIndicators').style.display = 'flex';
+    document.getElementById('selfDefine').style.display = 'none';
+  });
+
+  document.getElementById('selfDefineBut').addEventListener('click', function () {
+    document.getElementById('keyIndicators').style.display = 'none';
+    document.getElementById('selfDefine').style.display = 'flex';
+  });
+
+
   // 用于清除所有一级菜单的选中状态
   function clearFirstMenuSelection() {
     firstMenuItems.forEach(item => {
